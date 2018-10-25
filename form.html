@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <title>TomiDwiSetywan</title>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <h2 class="text-center bg-info pb-5 pt-4"><strong>Tugas Form JavaScript</strong></h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8 bg-light">
+                    <div class="form-group row mt-2">
+                        <label for="Nama" class="col-sm-2 col-form-label">Nama</label>
+                        <div class="col-sm-10">
+                            <input type="text" onfocusout="nameCheck()" class="form-control" id="nama" placeholder="ex: tomi">
+                            <small class="invalid-feedback">Input Your Name!!!</small>
+                            <small class="valid-feedback">correct :)</small>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="NIM" class="col-sm-2 col-form-label">NIM</label>
+                        <div class="col-sm-10">
+                            <input type="number" onfocusout="nimCheck()" class="form-control" name="nim" id="nim" placeholder="ex: 12345678">
+                            <small class="invalid-feedback">Input nim 8 karakter(1-8)</small>
+                            <small class="valid-feedback">correct :)</small>
+                        </div>
+                    </div>
+                    <div class="form-grup row">
+                        <label for="Alamat" class="col-sm-2 col-form-label">Alamat</label>
+                        <div class="col-sm-10">
+                            <textarea name="alamat" class="form-control" cols="20" rows="7" onfocusout="alamatCheck()"  id="alamat" placeholder="ex: Jln.bunga Kopi"></textarea>
+                            <small class="invalid-feedback">Input Your Address!!!</small>
+                            <small class="valid-feedback">correct :)</small>
+                        </div>
+                    </div>
+                    
+                    <div class="form-grup row mt-2">
+                        <label for="JK" class="col-sm-2 col-form-label">Jenis Kelamin</label>
+                        <div class="col-sm-10 mt-2">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" checked>
+                                <label class="form-check-label" for="inlineRadio1">Laki-Laki</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                <label class="form-check-label" for="inlineRadio2">Perempuan</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-grup row mt-2">
+                        <label for="Hobby" class="col-sm-2 col-form-label">Hobby</label>
+                        <div class="col-sm-10 mt-2">
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input" name="" id="" value="pilihan1" checked>
+                                    Coding
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input" name="" id="" value="pilihan2" checked>
+                                    Gambar
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input" name="" id="" value="pilihan3">
+                                    Tulis
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-grup text-center" action="/script.js">
+                        <button onclick="submitCheck()"  type="submit" class="btn btn-success">Submit</button>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
